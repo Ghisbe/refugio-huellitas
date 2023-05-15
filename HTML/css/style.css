@@ -95,5 +95,38 @@ header {
 	
 	50% {margin-left: -200%;}
 	70% {margin-left: -200%;}
-	
+}
+
+footer {
+	width: 100%;
+	align-items: center;
+	background-color: #29834b;
+	justify-content: space-between;
+	display: flex;
+	color: white;
+	padding: 1rem 0;
+}
+
+.footer p{
+	font-size: 15px;
+	margin-top: 1rem;
+	opacity: 0.6;
+}
+
+.p-footer {
+	justify-content: center;
+	display: flex;
+}
+
+.p-footer a {
+	opacity: 0.6;
+	padding: 2rem 2rem 0 2rem;
+}
+
+.p-footer a:hover {
+	opacity: 1;
+}
+
+.separator {
+	width: 25%;
 }
