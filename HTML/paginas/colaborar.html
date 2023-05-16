@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/validar.js"></script>
     <title>Colaborar</title>
 </head>
 <body>
@@ -25,8 +26,10 @@
 
    <p>Para colaborar llena el siguiente formulario:
    </p>
-   <form action="" method="">
+   <form action="" method="post" class="form-register" onsubmit="return validar_2 ();">
+
     <fieldset>
+
         <legend>Datos personales</legend>
    <label for="nombre">Nombre</label>
    <input type="text" name="nombre" id="nombre">
@@ -42,7 +45,7 @@
    <input type="text" name="localidad" id="localidad">
    <br><br>
    <label for="correo">Corre electronico</label>
-   <input type="email" name="correo" id="correo" required>
+   <input type="text" name="correo" id="correo" required>
    <br><br>
    <label for="telefono">Telefono</label>
    <input type="number" name="telefono" id="telefono">
@@ -56,9 +59,7 @@
     <input type="radio" name="option" value="2">Mercado pago
     
 </fieldset>
-<input type="checkbox" name="option" value="1" required><p> He leído y acepto la Política de Privacidad y doy mi consentimiento a Huellitas para que puedan contactar conmigo por teléfono o correo electrónico para responder a mi solicitud, 
-    así como recibir información sobre las acciones del refugio y posibles formas de colaboración.</p>
-<br>
+
 <input type="submit" value="ACEPTAR Y ENVIAR">
 
 </form>
