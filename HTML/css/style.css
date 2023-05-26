@@ -97,6 +97,43 @@ header {
 	70% {margin-left: -200%;}
 }
 
+.contenido-nosotros {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	display: flex;
+}
+
+.imagen-nosotros {
+	align-items: center;
+	display: flex;
+	padding: 0 3rem;
+}
+
+.articulo {
+	padding: 6px;
+	box-sizing: border-box;
+}
+
+.titulo-articulo {
+	font-size: 30px;
+}
+
+.p_nosotros {
+	font-size: 19px;
+	margin-top: 10px;
+}
+
+.contactolink {
+	display: flex;
+	margin: 2rem 0;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: large;
+	justify-content: center;
+}
+
 footer {
 	width: 100%;
 	align-items: center;
