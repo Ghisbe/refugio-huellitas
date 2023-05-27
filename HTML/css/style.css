@@ -2,9 +2,11 @@
 body {
     margin:0;
     padding:0;
+    box-sizing: border-box;
   }
 
 .header{
+    width: 100%;
     background-color: #4d893c;
     color: #fff;
     display: flex;
@@ -12,8 +14,11 @@ body {
     align-items: center;
     padding: .5rem 2rem;
     top: 0;
-  left: 0;
-  right: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    
 }
 .logo-header img{
     width: 100px;
@@ -26,6 +31,7 @@ body {
     align-items: center;
     list-style-type: none;
     float: center;  
+    
 }
 
 .nav-menu li{
@@ -54,7 +60,6 @@ body {
 }
 .menu-icon, #check{
     display: none;
-    color:#fff
 }
 .nav-menu ul li a:active {
 	color: #e8d4c0;
@@ -66,6 +71,11 @@ body {
 
 .nav-menu ul li a:hover {
 	color: #f27f0c;
+}
+#check:checked ~ ul{
+    left: 0;
+    display: block;
+   
 }
 @media (max-width:768px){
     .checkbtn{
@@ -80,27 +90,30 @@ body {
         top: 45px;
         right: 20px;
         cursor: pointer;
-        color:#fff;
+        
     }
+    
     .nav-menu ul{
         display: block;
         position: absolute;
         margin-top:58px;
-        background: #cfdb7e;
+        background: #a1a96d;
         width: 100%;
         height: 100vh;
         left: 100%;
         z-index: 12;
         align-items: center;
-        text-align: right;
-        transform: translateX(-100vw);
-        transition: 0.5s;
+        text-align: left;
+        transition: all 0.5s;
+        
+       
     }
     .nav-menu ul li{
         padding: 2rem;
         display: flex;
         justify-content: center;
         margin: 0;
+        
     }
     .nav-menu ul li a {
         display: inline-block;
@@ -110,12 +123,10 @@ body {
         text-decoration: none;
         font-size: large;
         color: white;
+      
     }
     
-    #check:checked ~ ul{
-        left: 0;
-        transition: all .25s;
-    }
+   
 }
 
 
@@ -125,6 +136,7 @@ body {
     margin-top: 20px;
     height: auto;
     display: block;
+    margin-top: 130px;
 }
 .slide-inner {
     position: relative;
@@ -342,6 +354,10 @@ body {
 }
 
 @media(min-width:760px) {
+    .slide-item img {
+        width: 100%;
+        height: 800px;
+    }
     .slide-inner {
         width: 100%;
         height: 555px;
@@ -420,7 +436,7 @@ body {
     height: 600px;
     padding: 20px;
     background-image: url(../img/trace-and-path-of-animal-tracks-dog-and-cat-moving-away-vector.jpg);
-    background: linear-gradient(rgba(5,7,12,0.75), rgba (5,7,12,0.75));
+    background: linear-gradient(rgba(189, 191, 198, 0.75), rgba (5,7,12,0.75));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,8 +518,8 @@ body {
     width: auto;
     height: auto;
     background-color: #e3f6d4;
-   padding: 15px;
-    
+    padding: 15px;
+    margin-top: 130px;
 
 }
 

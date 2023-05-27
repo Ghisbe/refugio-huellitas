@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/validar.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <title>Colaborar</title>
 </head>
 <body>
@@ -21,51 +21,23 @@
             </nav>   
         </div>
    </header>
-   <h1>Colabora y deja huellas</h1>
-   <h2>Formulario</h2>
-
-   <p>Para colaborar llena el siguiente formulario:
-   </p>
-   <form action="" method="post" class="form-register" onsubmit="return validar_2 ();">
-
-    <fieldset>
-
-        <legend>Datos personales</legend>
-   <label for="nombre">Nombre</label>
-   <input type="text" name="nombre" id="nombre">
-   <label for="apellido">Apellido</label>
-   <input type="text" name="apellido" id="apellido">
-   <br><br>
-   <label for="dni">DNI</label>
-   <input type="number" name="dni" id="dni" required>
-   <br><br>
-   <label fot="provincia">Provincia</label>
-   <input for="text" name="provincia" id="provincia">
-   <label for="localidad">Localidad</label>
-   <input type="text" name="localidad" id="localidad">
-   <br><br>
-   <label for="correo">Corre electronico</label>
-   <input type="text" name="correo" id="correo" required>
-   <br><br>
-   <label for="telefono">Telefono</label>
-   <input type="number" name="telefono" id="telefono">
-
-</fieldset>
-<br>
-<fieldset>
-    <legend>Colaboracion</legend>
-    <p>Elige las siguientes formas de pago:</p>
-    <input type="radio" name="option" value="1">Transferencia bancaria
-    <input type="radio" name="option" value="2">Mercado pago
+   
+   <title>Donar</title>
+</head>
+<body>
     
-</fieldset>
+    <h1 id="product-description">Donaciones a "Huellitas"</h1>
+    <p>Elige en monto a depositar:</p>
+    
 
-<input type="submit" value="ACEPTAR Y ENVIAR">
+    <input type="number" id="amount-input" min="0" />
+    <p>Total a donar: <span id="total-amount">0</span> $</p>
 
-</form>
+    <button id="checkout-btn">Donar</button>
 
-<img src="../img/perros-usan-mas-una-pata-jpg-133244.jpeg" alt="patitas" width="600" height="500">
-   <footer>
+    <div id="button-checkout"></div>
+    <script src="../js/index.js"></script>
+
     <div class="container">
         <p>&copy; Refugio patitas</p>
         <p>Direccion refugio</p>
