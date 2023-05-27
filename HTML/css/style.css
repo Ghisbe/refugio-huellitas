@@ -95,6 +95,7 @@ header {
 	70% {margin-left: -200%;}
 }
 
+/* css de pag nosotros comienza */
 .contenido-nosotros {
 	width: 100%;
 	margin-left: auto;
@@ -132,6 +133,31 @@ header {
 	justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .contenido-nosotros {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imagen-nosotros {
+      padding: 0;
+      margin-bottom: 1rem; 
+    }
+  
+    .articulo {
+      text-align: left; 
+    }
+
+    .titulo-articulo {
+        text-align: center;
+    }
+    .p_nosotros {
+    font-size: 15px;
+    }
+}
+/* css de pag nosotros termina */
+
+/* css pag contacto empieza */
 .contenedor-form {
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +166,7 @@ header {
     justify-content: center;
     
 }
+
 .contenedor-links {
     margin: 10px;
     width: 30%;
@@ -157,6 +184,7 @@ header {
     align-items: center;
    
 }
+
 .contenedor-form p {
     font-size: 17px;
     line-height: 1.6;
@@ -173,11 +201,13 @@ header {
     color:#1b1818;
     font-weight: 700;
 }
+
 .contenedor-form a i {
     color:#e9693b;
     margin-right: 10px;
 
 }
+
 .contenedor-form form {
     display: flex;
 	padding: 10px;
@@ -185,11 +215,11 @@ header {
     margin-top: 60px;
     color:#624034;
 }
+
 .contenedor-form label {
     padding: 5px;
     font-size: 18px;
 }
-
 
 .contenedor-form textarea {
     padding: 20px;
@@ -208,9 +238,11 @@ header {
     cursor: pointer;
     transition: all 300ms ease;
 }
+
 .contenedor-form .boton:hover{
     background: #efddbc;
 }
+/* css pag contacto fin */
 
 footer {
 	width: 100%;
