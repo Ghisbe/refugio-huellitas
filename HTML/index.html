@@ -2,64 +2,167 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Huellitas</title>
+    <link rel="icon" href="img/refugio.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+    <script src="js/validar.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+   
   <script src="https://kit.fontawesome.com/70e3604f47.js" crossorigin="anonymous"></script>
   <title>Refugio Huellitas</title>
-  <link href="css/style.css" rel="stylesheet">
+ 
 </head>
 
 <body>
-  <header>
-    <div class="header-barra">
-      <img src="../HTML/img/refugio-white.png" class="logo" alt="">
-      <nav class="barra">
+    <header class="header">
+        <div class="logo-header">
+            <a href=""><img src="img/refugio-white.png" ></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+               <i class="menu-icon"> <img src="img/bars-solid (1).svg"></i>
+
+            </label>
+        
         <ul>
           <li><a href="paginas/pagina1.html" target="_blank">Sobre nosotros</a></li>
           <li><a href="paginas/adopcion.html" target="_blank">En adopcion</a></li>
+          <li><a href="paginas/voluntario.html" target="_blank">Ser voluntario</a> </li>
           <li><a href="paginas/colaborar.html" target="_blank">Colaborar</a></li>
           <li><a href="paginas/contacto.html" target="_blank">Contacto</a></li>
-        </ul>
-      </nav>
+            </ul>
+        
+        
+        </div>
+  </header> 
+
+  
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <a href="paginas/pagina1.html">
+                <img src="img/pexels-edgar-daniel-hernández-cervantes-3628100.jpg"></a>
+                <div class="contenedor_1">
+                    <h2>Somos Huellitas</h2>
+                    <p>Este es nuestro refugio</p>
+                </div>
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <a href="paginas/colaborar.html">
+                <img src="img/gatito4.jpg"></a>
+                <div class="contenedor_2">
+                    <h2>Deja tu huella</h2>
+                    <p>Colabora y cambiaras una vida</p>
+                </div>
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <a href="paginas/adopcion.html">
+                <img src="img/sobre nosotros.jpg"></a>
+                <div class="contenedor_3">
+                    <h2>Adoptar es un acto de amor</h2>
+                    <p>Te estan esperando</p>
+                   
+                </div>
+
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
     </div>
-  </header>
-
-
-  <div class="slider-frame">
-    <ul>
-      <li><img src="img/1.png" alt=""></li>
-      <li><img src="img/2.png"></li>
-      <li><img src="img/3.png" alt=""></li>
-    </ul>
-  </div>
 
 
 
 
 
-  <section id="opciones"> <!--cada div con su foto-->
-    <div class="container">
-      <div class="donar">
-        <h3>DONAR</h3>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestias, reiciendis laborum molestiae
-          vel suscipit minima, aliquid repellat nam sed dignissimos a fugit saepe veritatis. Beatae reprehenderit
-          architecto cum obcaecati.
-        </P>
-        <!--VER SI VA UN BUTTON-->
-      </div>
+    <section id="bienvenidos">
+        <h2>Bienvenidos a nuestro refugio</h2>
+        <p>Somos una organizacion sin fines de lucro que busca ayudar y proteger a nuestros amigos perrunos y gatunos.<br>
+            Amamos hacer este labor, y queremos promover la adopción responsable, la conciencia de esterilizar y <br> recuperar
+            a los animales en condición de maltrato y/o abandono. Para contribuir y entregarles la calidad de vida que necesiten.<p> 
+    </section>
 
-      <div class="conocer">
-        <h3>Conozca a nuestras Huellitas</h3>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sequi tenetur dolor! Laborum neque
-          modi, voluptatum inventore ad sed, impedit soluta harum assumenda quos cum, incidunt tenetur debitis
-          voluptate.</P>
-      </div>
+    <section id="cuadro">
+        
+        <div class="contenedor">
+           
+                <div class="contenedor_vol">
+                    <h2>Ser voluntario</h2>   
+                    <p>Dona tu tiempo, cambiaras una vida</p>    
+                    <a href="paginas/voluntario.html" target="_blank" class="boton_1">Me sumo</a>                
+                </div>
+                <div class="contenedor_texto">
+                    <h2>Donar</h2>
+                    <p>Hace la diferencia, dales una oportunidad</p>
+                    <a href="paginas/colaborar.html" target="_blank" class="boton_1">Colaborar</a>
+                </div>
+           
+        </div>
+    </section>
+
+    <section id="listado">
+        <h2>Las huellitas que buscan el camino a casa</h2>
+        <div class="contenedor">
+            <div class="huella_1">
+            <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/gato 4.jpg" alt="Eros"></a>
+            <h3>Eros</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 2.jpg" alt="chispita"></a>
+            <h3>Chispita</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/gato 3.jpg" alt="bigotes"></a>
+            <h3>Bigotes</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 5.jpg" alt="pelusa"></a>
+            <h3>Pelusa</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 6.jpg" alt="osita"></a>
+            <h3>Osita</h3>
+            </div>
+            <div class="huella_2">
+                <a href="paginas/adopcion.html" class="boton_2" target="_blank">Mas Huellitas</a>
+            
+            </div>
+        </div>
+    </section>
+</main>
+    
+
+ 
 
     </div>
 

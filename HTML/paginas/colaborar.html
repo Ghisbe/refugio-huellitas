@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <title>Colaborar</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        header
-    </header>
+        <div class="container">
+            <img src="../img/refugio.png" alt="">
+            <nav class="barra">
+                <ul>
+                    <a href="../index.html" target="_blank">Huellitas</a>
+                    <a href="../paginas/pagina1.html" target="_blank">Sobre nosotros</a>
+                    <a href="../paginas/adopcion.html" target="_blank">En adopcion</a>
+                    <a href="../paginas/contacto.html" target="_blank">Contacto</a>
+                </ul>
+            </nav>   
+        </div>
+   </header>
+   
+
+</head>
+<body>
+    
+
     <div class="imagen-donacion">
         <img src="../img/donacion.jpeg" alt="">
     </div>
@@ -40,11 +56,23 @@
         </ul>
     </details>
     <details>
+        <summary>Mercado Pago</summary>
+        <h1 id="product-description">Donaciones a "Huellitas"</h1>
+        <p>Elige en monto a depositar:</p>
+
+        <input type="number" id="amount-input" min="0" />
+        <p>Total a donar: <span id="total-amount">0</span> $</p>
+        <button id="checkout-btn">Donar</button>
+    
+        <div id="button-checkout"></div>
+        <script src="../js/index.js"></script>
+    
+    </details>
+    <details>
         <summary>Alimentos</summary>
         <ul>
             <li>Gatos </li>
             <li>Perros</li>
-
         </ul>
     </details>
     <details>
