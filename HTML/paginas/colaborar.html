@@ -6,40 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <link rel="icon" href="../img/refugio.ico">
+    <script src="https://kit.fontawesome.com/70e3604f47.js" crossorigin="anonymous"></script>
     <title>Colaborar</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <img src="../img/refugio.png" alt="">
-            <nav class="barra">
-                <ul>
-                    <a href="../index.html" target="_blank">Huellitas</a>
-                    <a href="../paginas/pagina1.html" target="_blank">Sobre nosotros</a>
-                    <a href="../paginas/adopcion.html" target="_blank">En adopcion</a>
-                    <a href="../paginas/contacto.html" target="_blank">Contacto</a>
-                </ul>
-            </nav>   
+    <header class="header">
+        <div class="logo-header">
+            <a href=""><img src="../img/refugio-white.png" ></a>
         </div>
-   </header>
-   
+        <div class="nav-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+               <i class="menu-icon"> <img src="../img/bars-solid (1).svg"></i>
 
-</head>
+            </label>
+        
+        <ul>
+        <li><a href="../index.html" target="_blank">Huellitas</a></li>
+          <li><a href="../paginas/pagina1.html" target="_blank">Sobre nosotros</a></li>
+          <li><a href="../paginas/adopciones.html" target="_blank">En adopcion</a></li>
+          <li><a href="../paginas/voluntario.html" target="_blank">Ser voluntario</a> </li>
+          <li><a href="../paginas/contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        
+        
+        </div>
+  </header> 
+
+
 <body>
-    
-
-    <div class="imagen-donacion">
-        <img src="../img/donacion.jpeg" alt="">
-    </div>
+    <div class="intro">
     <h1>Colabora y deja huellas</h1>
     <p>Actos de generosidad y compromiso como el que estás a punto de realizar, permiten que en
-        <a href="file:///C:/Users/Paula/Desktop/huellitas%20refugio/refugio-huellitas/HTML/index.html"
-            target="_blank">Huellitas Refugio</a> podamos seguir desarrollando nuestra labor, por lo cual te estamos muy
+        <a href="../index.html" target="_blank">Huellitas Refugio</a> podamos seguir desarrollando nuestra labor, por lo cual te estamos muy
         agradecidos. De esta forma, tu aporte se convierte en acción directa para la protección de animales en situación
         de peligro.
     </p>
+</div>
 
     <h2>¿Cómo puedo donar?</h2>
 
@@ -57,11 +63,11 @@
     </details>
     <details>
         <summary>Mercado Pago</summary>
-        <h1 id="product-description">Donaciones a "Huellitas"</h1>
-        <p>Elige en monto a depositar:</p>
+        <p id="product-description">Donación a "Huellitas"</p>
+        <p id="texto-donar">Elige en monto a depositar:</p>
 
         <input type="number" id="amount-input" min="0" />
-        <p>Total a donar: <span id="total-amount">0</span> $</p>
+        <p id="texto-donar">Total a donar: <span id="total-amount">0</span> $</p>
         <button id="checkout-btn">Donar</button>
     
         <div id="button-checkout"></div>
@@ -71,8 +77,8 @@
     <details>
         <summary>Alimentos</summary>
         <ul>
-            <li>Gatos </li>
-            <li>Perros</li>
+            <li>Alimentos balanceados para gatos </li>
+            <li>Alimentos balanceado para perros</li>
         </ul>
     </details>
     <details>
@@ -103,16 +109,19 @@
 
     <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en <a href="../paginas/contacto.html"
             target="_blank">Contacto</a>
+            <div class="imagen-donacion">
+                <img src="../img/donacion.jpeg" alt="">
+            </div>
 
 
     <footer>
         <div class="separator"></div>
         <div class="footer">
           <h2>Refugio Huellitas</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolores consequuntur officia provident
-            explicabo libero ducimus adipisci. Asperiores neque nisi distinctio labore a iusto pariatur facilis repellat
-            illum, minima quis.</p>
+          
           <p>Av. Las Patitas 2323</p>
+          <p>Huellitas nace para dar una segunda oportunidad a los animales que han sido víctimas de maltrato y abandono. 
+            Promoviendo el amor, cuidado, respeto y protección al rescatar, recuperar, rehabilitar y entregar en adopción.</p>
           <p>&copy; Refugio Huellitas. Todos los derechos reservados.</p>
       
           <div class="p-footer">
