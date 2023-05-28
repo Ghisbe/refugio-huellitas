@@ -1,3 +1,6 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
 
 body {
     margin:0;
@@ -686,83 +689,195 @@ img {
 	display: grid;
 	max-width: 1200px;
 	width: 100%;
-	height: 100%;
-	margin-right: 20px;
-	margin-left: 65px;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-auto-rows: 200px;
-	gap: 40px;
-	padding: 20px;
-	justify-content: center;
-
-}
-
-.adopciones-item {
-	padding: 10px;
-	text-align: center;
-	font-weight: bold;
-	text-transform: uppercase;
-
-}
-
-h1 {
-	color: #333;
-	font-size: 33px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 45px;
-	margin-right: 45px;
-}
-
-h2 {
-	color: #333;
-	font-size: 33px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 45px;
-	margin-right: 45px;
-}
-
-p {
-	font-size: 20px;
-	color: #666;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	margin-left: 45px;
-	margin-right: 45px;
-}
-
-details {
-	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 45px;
-	margin-right: 45px;
-	padding: 10px;
-}
-
-summary {
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 17px;
-	margin-left: 10px;
-}
-
-ul {
-	list-style-type: disc;
-	padding-left: 30px;
-}
-
-li {
-	margin-bottom: 5px;
-	font-size: 15px;
-	padding: 10px;
-	padding-top: 10px;
-}
-
-.imagen-donacion {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
 	display: flex;
-	justify-content: center;
+}
+* css de pag nosotros comienza */
+.contenido-nosotros {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+}
+.imagen-nosotros {
 	align-items: center;
+	display: flex;
+	padding: 0 3rem;
+}
+
+.articulo {
+	padding: 6px;
+	box-sizing: border-box;
+}
+
+.titulo-articulo {
+	font-size: 30px;
+}
+
+.p_nosotros {
+	font-size: 19px;
+	margin-top: 10px;
+}
+
+.contactolink {
+	display: flex;
+	margin: 2rem 0;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: large;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .contenido-nosotros {
+      	flex-direction: column;
+      	align-items: center;
+    }
+  
+    .imagen-nosotros {
+      	padding: 0;
+      	margin-bottom: 1rem; 
+    }
+	
+	.imagen-nosotros img {
+		max-width: 400px !important;
+		height: auto;
+	}
+
+    .articulo {
+      	text-align: left;
+	  	margin-left: 20px; 
+    }
+
+    .titulo-articulo {
+    	text-align: center;
+    }
+    .p_nosotros {
+    	font-size: 15px;
+    }
+}
+/* css de pag nosotros termina */
+
+/* css pag contacto empieza */
+.contenedor-form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efddbc;
+    width: auto;
+    justify-content: center;
+    
+}
+
+.contenedor-links {
+    margin: 10px;
+    width: 30%;
+    padding: 45px;
+    margin-top: 80px;
+}
+
+.contenedor-3 {
+    max-width: 70%;
+}
+
+.contenedor-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    align-items: center;
+   
+}
+
+.contenedor-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.contenedor-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color:#1b1818;
+    font-weight: 700;
+}
+
+.contenedor-form a i {
+    color:#e9693b;
+    margin-right: 10px;
+
+}
+
+.contenedor-form form {
+    display: flex;
+	padding: 10px;
+    margin: 10px;
+    margin-top: 60px;
+    color:#624034;
+}
+
+.contenedor-form label {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.contenedor-form textarea {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contenedor-form .boton{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.contenedor-form .boton:hover{
+    background: #efddbc;
+}
+/* css pag contacto fin */
+
+.footer {
+	width: 100%;
+	align-items: center;
+	background-color: #29834b;
+	justify-content: space-between;
+	display: flex;
+	color: white;
+	padding: 1rem 0;
+}
+
+.footer p{
+	font-size: 15px;
+	margin-top: 1rem;
+	opacity: 0.6;
+}
+
+.p-footer {
+	justify-content: center;
+	display: flex;
+}
+
+.p-footer a {
+	opacity: 0.6;
+	padding: 2rem 2rem 0 2rem;
+}
+
+.p-footer a:hover {
+	opacity: 1;
+}
+
+.separator {
+    width: 25%;
 }
