@@ -23,7 +23,7 @@ body {
     position: fixed;
     z-index: 100;
 }
-.logo-header img {
+.logo-header img{
     width: 100px;
     height: 100px;
    margin-left: 30%;
@@ -37,7 +37,7 @@ body {
     
 }
 
-.nav-menu li {
+.nav-menu li{
     margin-right: 1rem;
     font-size: 20px;
     text-decoration: none;
