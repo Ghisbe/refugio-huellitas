@@ -67,4 +67,4 @@ function createCheckoutButton(preferenceId) {
     );
   };
   window.checkoutButton = renderComponent(bricksBuilder);
-}
+};
