@@ -4,7 +4,7 @@
   "description": "",
   "main": "mp.js",
   "scripts": {
-    "start":"nodemon mp.js",
+    "start": "nodemon mp.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
